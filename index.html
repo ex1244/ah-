@@ -1,0 +1,70 @@
+<html>
+	<head>
+	<title>Websit</title>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+	<style>
+	img{
+	display: block;
+	margin:0 auto;
+
+}
+	h1{
+	font-size: 100px;
+	font-family: 'Liu Jian Mao Cao', cursive;
+}
+	div{
+	color: red;
+	font-size: 750px;
+	opacity: .60;
+	background-color: cyan;
+	width: 100%;
+	font-family: 'Baloo Chettan 2', cursive;
+}
+	body{
+	width: 100%;
+}
+	</style>
+	</head>
+	
+	<body>
+	<img src="kirb_stomp.png" alt="a weird image">
+	<h1> 
+	ahdflkjabnflkajb
+	</h1>	
+	<table style="width:100%">
+		<tr>
+		  <th>Firstname</th>
+		  <th>Lastname</th>
+		  <th>Age</th>
+		</tr>
+		<tr>
+		  <td>Jill</td>
+		  <td>Smith</td>
+		  <td>50</td>
+		</tr>
+		<tr>
+		  <td>Eve</td>
+		  <td>Jackson</td>
+		  <td>94</td>
+		</tr>
+	  </table>
+	<div>
+	box
+	</div>
+	<button onclick = "button()">
+	Press
+	</button>
+	<script>
+	var rotate = 5;
+	console.log("rotate("+ rotate + "deg" + ")");
+	function button(){
+	document.querySelector("div").style.backgroundColor = "black";
+}
+	setInterval(function(){ 
+		document.querySelector("img").style.transform = "rotate("+ rotate + "deg" + ")";
+		console.log(rotate);
+		rotate += -5;
+	}, 35);
+	</script>
+	</body>
+</html>
